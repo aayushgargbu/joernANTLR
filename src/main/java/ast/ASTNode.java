@@ -15,6 +15,10 @@ public class ASTNode implements Cloneable {
 
     private boolean isInCFG = false;
 
+    public LinkedList<ASTNode> getChildren() {
+        return children;
+    }
+
     protected LinkedList<ASTNode> children;
     protected int childNumber;
 
