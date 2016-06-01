@@ -69,7 +69,7 @@ public class NestingReconstructor {
                         BlockStarter elseItem = (BlockStarter) stack.pop();
                         elseItem.addChild(curBlockStarter);
 
-                        IfStatement lastIf = (IfStatement) stack
+                        IfStatement lastIf = stack
                                 .getIfInElseCase();
                         if (lastIf != null) {
                             lastIf.setElseNode((ElseStatement) elseItem);
@@ -82,7 +82,7 @@ public class NestingReconstructor {
                     // add else statement to the previous if-statement,
                     // which has already been consolidated so we can return
 
-                    IfStatement lastIf = (IfStatement) stack.getIf();
+                    IfStatement lastIf = stack.getIf();
                     if (lastIf != null)
                         lastIf.setElseNode((ElseStatement) curBlockStarter);
                     else
@@ -96,12 +96,12 @@ public class NestingReconstructor {
 
                     DoStatement lastDo = stack.getDo();
                     if (lastDo != null) {
-                        lastDo.addChild(((WhileStatement) curBlockStarter)
+                        lastDo.addChild(curBlockStarter
                                 .getCondition());
                         return;
                     }
                 } else if (curBlockStarter instanceof CatchStatement) {
-                    TryStatement tryStatement = (TryStatement) stack.getTry();
+                    TryStatement tryStatement = stack.getTry();
                     if (tryStatement != null) {
                         tryStatement
                                 .addCatchNode((CatchStatement) curBlockStarter);

@@ -29,7 +29,6 @@ public abstract class ASTWalker implements Observer {
                 end();
                 break;
         }
-        ;
     }
 
     public abstract void startOfUnit(ParserRuleContext ctx, String filename);

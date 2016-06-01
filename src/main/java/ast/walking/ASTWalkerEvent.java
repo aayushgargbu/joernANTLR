@@ -12,8 +12,6 @@ public class ASTWalkerEvent {
         BEGIN, START_OF_UNIT, END_OF_UNIT, PROCESS_ITEM, END
     }
 
-    ;
-
     public ASTWalkerEvent(eventID aId) {
         id = aId;
     }

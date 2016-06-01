@@ -129,7 +129,7 @@ public class ASTNodeVisitor {
 
     public void defaultHandler(ASTNode item) {
         // by default, redirect to visit(ASTNode item)
-        visit((ASTNode) item);
+        visit(item);
     }
 
     public void visitChildren(ASTNode item) {
