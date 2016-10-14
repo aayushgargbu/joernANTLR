@@ -1,6 +1,6 @@
 # Joern
 
-This repository is a maven adaptation of the [joern project](https://github.com/fabsx00/joern) with some parts removed.
+This repository is a maven adaptation of the [joern project](https://github.com/fabsx00/joern) (warning: some parts have been removed).
 
 ##Author: 
 
