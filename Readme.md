@@ -2,20 +2,20 @@
 
 This repository is a maven adaptation of the [joern project](https://github.com/fabsx00/joern) (warning: some parts have been removed).
 
-##Author: 
+## Author: 
 
 Fabian Yamaguchi <fabian.yamaguchi@cs.uni-goettingen.de>
            
-###Contributors:
+### Contributors:
            
 Alwin Maier <alwin.maier@stud.uni-goettingen.de>
 
 
-##Introduction
+## Introduction
 This library allows one to parse a C file under the form of a string from a java program.
 An AST, CFG or DDG can then be computed from this parsed file.
 
-##Use
+## Use
 This library is used in this project by the [FileMetrics](https://github.com/electricalwind/FilesMetrics.md) project
     
 In order to retrieve the AST of a file the following steps are required (code in Kotlin):
